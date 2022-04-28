@@ -27,3 +27,9 @@ describe('Explorer Service getAmountOfExplorersByMission tests', () => {
         expect(numberOfExplorers).toBeGreaterThan(0)
     });
 });
+
+describe('ExplorerService getExplorersUsernamesByMission tests', () => {
+    test('should ', () => {
+        
+    });
+});
