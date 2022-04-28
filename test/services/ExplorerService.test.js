@@ -29,7 +29,8 @@ describe('Explorer Service getAmountOfExplorersByMission tests', () => {
 });
 
 describe('ExplorerService getExplorersUsernamesByMission tests', () => {
-    test('should ', () => {
-        
+    test('should get an empty array if given wrong value', () => {
+        const usernames = ExplorerService.getExplorersUsernamesByMission(explorers, "C#")
+        expect(usernames.length).toEqual(0)
     });
 });
