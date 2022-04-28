@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/oscar-cbrlc/fizzbuzz-refactor/issues"
   },
-  "homepage": "https://github.com/oscar-cbrlc/fizzbuzz-refactor#readme"
+  "homepage": "https://github.com/oscar-cbrlc/fizzbuzz-refactor#readme",
+  "devDependencies": {
+    "jest": "^28.0.2"
+  }
 }
