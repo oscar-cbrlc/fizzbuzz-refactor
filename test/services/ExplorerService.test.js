@@ -18,7 +18,12 @@ describe('Explorer Service filterByMission tests', () => {
 
 describe('Explorer Service getAmountOfExplorersByMission tests', () => {
     test('should get 0, given an invalid value', () => {
+        // also works for non-existing values
         const numberOfExplorers = ExplorerService.getAmountOfExplorersByMission(explorers, 321)
         expect(numberOfExplorers).toEqual(0)
+    });
+    test('should get more than 0, given an existing value', () => {
+        const numberOfExplorers = ExplorerService.getAmountOfExplorersByMission(explorers, "java")
+        expect(numberOfExplorers).toBeGreaterThan(0)
     });
 });
