@@ -9,4 +9,9 @@ describe('Explorer Service method tests', () => {
         const explorersInNode = ExplorerService.filterByMission(explorers, "node")
         expect(explorersInNode).not.toBeUndefined()
     });
+
+    test('should return a not-empty list of explorers given an existing mission (in any of them)', () => {
+        const explorersInNode = ExplorerService.filterByMission(explorers, "node")
+        expect(explorersInNode.length).toBeGreaterThan(0)
+    });
 });
