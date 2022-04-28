@@ -6,7 +6,7 @@ const explorers = Reader.readJsonFile('./../../test/info/explorers.json')
 
 describe('Explorer Service method tests', () => {
     test('should return a not-undefined list of explorers filtered by a mission', () => {
-        explorersInNode = ExplorerService.filterByMission(explorers, "h")
+        const explorersInNode = ExplorerService.filterByMission(explorers, "node")
         expect(explorersInNode).not.toBeUndefined()
     });
 });
