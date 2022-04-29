@@ -36,7 +36,7 @@ describe('ExplorerService getExplorersUsernamesByMission tests', () => {
         expect(usernames.length).toEqual(0)
     });
     test('should get a username list if given existing value', () => {
-        const usernames = ExplorerService.getExplorersUsernamesByMission(explorers, "css")
+        const usernames = ExplorerService.getExplorersUsernamesByMission(explorers, "java")
         expect(usernames).toEqual(['ajolonauta16', 'ajolonauta17'])
     });
 });
