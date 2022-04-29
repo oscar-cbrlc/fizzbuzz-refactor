@@ -2,7 +2,7 @@ const Reader = require("./../../lib/utils/Reader");
 const ExplorerService = require("./../../lib/services/ExplorerService");
 
 // tested in Reader.test.js
-const explorers = Reader.readJsonFile("./../../test/info/explorers.json");
+const explorers = Reader.readJsonFile("./../../test/explorers.json");
 
 // ... //
 
