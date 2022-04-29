@@ -18,4 +18,9 @@ describe("Tests for Explorer Controller", () => {
         expect(usernamesFromController).toEqual(usernamesFromService)
     });
     
+    test("[getExplorersAmonutByMission] should get the correct number, given any value", () => {
+        const numberFromService = ExplorerService.getAmountOfExplorersByMission(explorers, "node")
+        const numberFromController = ExplorerController.getAmountOfExplorersByMission("node")
+        expect(numberFromService).toEqual(numberFromController)
+    });
 });
