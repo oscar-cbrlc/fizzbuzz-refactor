@@ -168,5 +168,23 @@
         "reasonML",
         "elm"
       ]
+    }, 
+    {
+      "name": "Woopa16",
+      "githubUsername": "ajolonauta16",
+      "score": 16,
+      "mission": "css",
+      "stacks": [
+        "javascript"
+      ]
+    }, 
+    {
+      "name": "Woopa17",
+      "githubUsername": "ajolonauta17",
+      "score": 17,
+      "mission": "css",
+      "stacks": [
+        "javascript"
+      ]
     }
     ] 
