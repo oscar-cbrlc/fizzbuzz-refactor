@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/oscar-cbrlc/fizzbuzz-refactor#readme",
   "devDependencies": {
+    "eslint": "^8.14.0",
     "jest": "^27.5.1"
   }
 }
