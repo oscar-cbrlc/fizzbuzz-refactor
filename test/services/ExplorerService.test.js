@@ -4,6 +4,8 @@ const ExplorerService = require('./../../lib/services/ExplorerService')
 // tested in Reader.test.js
 const explorers = Reader.readJsonFile('./../../test/info/explorers.json')
 
+// ... //
+
 describe('Explorer Service filterByMission tests', () => {
     test('should return a not-undefined list of explorers filtered by a mission', () => {
         const explorersInNode = ExplorerService.filterByMission(explorers, "ad")
@@ -32,5 +34,9 @@ describe('ExplorerService getExplorersUsernamesByMission tests', () => {
     test('should get an empty array if given wrong value', () => {
         const usernames = ExplorerService.getExplorersUsernamesByMission(explorers, "C#")
         expect(usernames.length).toEqual(0)
+    });
+    test('should get a username list if given existing value', () => {
+        const usernames = ExplorerService.getExplorersUsernamesByMission(explorers, "css")
+        expect(usernames).toEqual(['ajolonauta16', 'ajolonauta17'])
     });
 });
