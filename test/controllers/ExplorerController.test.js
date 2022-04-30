@@ -1,6 +1,8 @@
 const ExplorerController = require("./../../lib/controllers/ExplorerController");
 const ExplorerService = require("../../lib/services/ExplorerService");
 const Reader = require("./../../lib/utils/Reader");
+const FizzbuzzService = require("./../../lib/services/FizzbuzzService")
+
 const explorers = Reader.readJsonFile("./../explorers.json");
 
 describe("Tests for Explorer Controller", () => {
@@ -23,4 +25,10 @@ describe("Tests for Explorer Controller", () => {
         const numberFromController = ExplorerController.getAmountOfExplorersByMission("node");
         expect(numberFromService).toEqual(numberFromController);
     });
+    test("[getFizzbuzzValidation] should get the correct result, given a valid number", () => {
+        // Fizzbuzz already tested in Fizzbuzz tests, here we're just making sure they return the same result
+        const resultFromService = FizzbuzzService.applyValidationInNumber(15);
+        const resultFromController = ExplorerController.getFizzbuzzResult(15);
+        expect(resultFromController).toEqual(resultFromService);
+    })
 });
