@@ -1,6 +1,6 @@
 const ExplorerController = require("./../../lib/controllers/ExplorerController");
 const ExplorerService = require("../../lib/services/ExplorerService");
-const Reader = require("./../../lib/utils/reader");
+const Reader = require("./../../lib/utils/Reader");
 const explorers = Reader.readJsonFile("./../explorers.json");
 
 describe("Tests for Explorer Controller", () => {
